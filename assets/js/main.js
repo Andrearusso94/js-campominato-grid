@@ -6,6 +6,8 @@
 //L'utente clicca su un bottone che genererà una griglia di gioco quadrata.
 const buttonGenerator = document.getElementById("go");
 
+buttonGenerator.addEventListener("click", function(){
+
 // seleziono l'elemento dove inserire le caselle
 let container = document.querySelector(".container")
 
@@ -20,5 +22,6 @@ let listaCaselle = document.getElementsByClassName("casella")
 for (let i = 0; i < numeroCaselle; i++){
     //aggiungo la casella al container
     container.innerHTML += casella
-    console.log(numeroCaselle)
+    console.log(numeroCaselle);
 }
+})
