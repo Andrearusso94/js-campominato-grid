@@ -22,15 +22,16 @@ let listaCaselle = document.getElementsByClassName("casella")
 for (let i = 0; i < numeroCaselle; i++){
     //aggiungo la casella al container
     container.innerHTML += casella
-    console.log(numeroCaselle);
+ 
+    
 }
 
 // creo click per giocare
-for (let i = 0; i < listaCaselle.lenght; i++){
+for (let i = 0; i < listaCaselle.length; i++){
     let singolaCasella = listaCaselle[i]
     singolaCasella.addEventListener("click", function(){
         singolaCasella.classList.add("blue")
-        console.log(singolaCasella)
+        console.log(singolaCasella, numeroCaselle)
     })
 }
 
