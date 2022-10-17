@@ -12,7 +12,7 @@ buttonGenerator.addEventListener("click", function(){
 let container = document.querySelector(".container")
 
 // creo variabile con markup del quadrato 
-let casella = '<div class="casella"></div>'
+
 let numeroCaselle = 100;
 
 //definisco la classe
@@ -25,8 +25,8 @@ let listaCaselle = document.getElementsByClassName("casella")
 for (let i = 0; i < numeroCaselle; i++){
     
     //aggiungo la casella al container
-    
-       container.insertAdjacentHTML("beforeend", `${i}`)
+    let casella = `<div class="casella">${i}</div>`
+       
        container.innerHTML += casella
     
     
