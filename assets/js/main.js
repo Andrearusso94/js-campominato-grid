@@ -20,15 +20,20 @@ let listaCaselle = document.getElementsByClassName("casella")
 
 // creo ciclo for
 for (let i = 0; i < numeroCaselle; i++){
+   
     //aggiungo la casella al container
     container.innerHTML += casella
- 
+    
+    
     
 }
 
 // creo click per giocare
 for (let i = 0; i < listaCaselle.length; i++){
     let singolaCasella = listaCaselle[i]
+    
+    container.insertAdjacentHTML("beforeend", singolaCasella)
+ 
     singolaCasella.addEventListener("click", function(){
         singolaCasella.classList.add("blue")
         console.log(singolaCasella, numeroCaselle)
