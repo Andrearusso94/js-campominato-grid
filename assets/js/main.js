@@ -6,4 +6,12 @@
 //L'utente clicca su un bottone che genererà una griglia di gioco quadrata.
 const buttonGenerator = document.getElementById("go");
 
-/
+// seleziono l'elemento dove inserire le caselle
+let container = document.querySelector(".container")
+
+// creo variabile con markup del quadrato 
+let casella = '<div class="casella"></div>'
+let numeroCaselle = 100;
+
+//definisco la classe
+let listaCaselle = document.getElementsByClassName("casella")
