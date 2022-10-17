@@ -24,4 +24,16 @@ for (let i = 0; i < numeroCaselle; i++){
     container.innerHTML += casella
     console.log(numeroCaselle);
 }
+
+// creo click per giocare
+for (let i = 0; i < listaCaselle.lenght; i++){
+    let singolaCasella = listaCaselle[i]
+    singolaCasella.addEventListener("click", function(){
+        singolaCasella.classList.add("blue")
+        console.log(singolaCasella)
+    })
+}
+
+
 })
+
