@@ -23,11 +23,11 @@ let listaCaselle = document.getElementsByClassName("casella")
 
 // creo ciclo for
 for (let i = 0; i < numeroCaselle; i++){
-   
+    
     //aggiungo la casella al container
-    container.innerHTML += casella
+    
        container.insertAdjacentHTML("beforeend", `${i}`)
-       
+       container.innerHTML += casella
     
     
 }
